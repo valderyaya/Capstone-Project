@@ -7,12 +7,30 @@ Find: a subgraph 𝐻* ⊆ 𝐺 to maximize the total vertex weight of vertices 
 
 (2)	 The distance between all vertices in  𝐻* and 𝑣0 does not exceed ℎ
 
-(3)	 𝑑<sub>upper</sub>(u) ≥ 𝑑𝐻*(u) ≥ 𝑑<sub>lower</sub>(u), for all vertices u ∈ 𝐻*
+(3)	 𝑑<sub>upper</sub>(𝑢) ≥ 𝑑𝐻*(𝑢) ≥ 𝑑<sub>lower</sub>(𝑢), for all vertices u ∈ 𝐻*
 
 # How to Run
-If you have make tool, run ```make run```, else run the command ```g++ -mcmodel=medium -Ofast -o solver ./main.cpp```
+If you have make tool, run:
+```
+make run
+```
+else run the command: 
+```
+g++ -mcmodel=medium -Ofast -o solver ./main.cpp
+
+./solver.exe
+```
 
 # Sample input
+
+The first line contains two integers, 𝑛 and 𝑚, representing the number of nodes and the number of edges.
+
+The second line contains 𝑛 integers representing 𝑑<sub>upper</sub>(𝑢).
+
+The third line contains 𝑛 integers representing 𝑑<sub>lower</sub>(𝑢).
+
+The following 𝑚 lines each contain three integers 𝑢, 𝑣, and 1, indicating that there is an edge with weight 1 between nodes 𝑢 and 𝑣.
+
 ```
 8 9
 1 3 1 7 3 1 1 3
